@@ -5,9 +5,9 @@
 
 - para adicionar o typescript
 
-  ```bash
-    yarn add typescript -D
-  ```
+```bash
+  yarn add typescript -D
+```
 
 ## Padronização
 
