@@ -32,3 +32,8 @@ utilizando o eslint estou pegando o estilo da airbnb
 ## Conceito de repositórios
 
 repositórios sao camada responsável pela manipulação de dados na aplicação no banco de dados.
+
+- as rota nao precisa saber as informação que tem dentro da categoria o único que tem qu conhecer os modelos sao os repositórios nao a rotas
+
+- podemos usa o conceito DTO `Data transfer objeto`
+  - um objeto que que seja responsável entra as camadas.

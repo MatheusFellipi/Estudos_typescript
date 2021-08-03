@@ -1,11 +1,15 @@
 import { Category } from "../model/Category";
 
+interface ICreateCategoryDTO {
+  name: string;
+  description: string;
+}
 class CategoryRepository {
   private categories: Category[];
   constructor() {
     this.categories = [];
   }
-  create() {
+  create({ description, name }: ICreateCategoryDTO): void {
     const category = new Category();
     Object.assign(category, {
       name,
@@ -15,4 +19,8 @@ class CategoryRepository {
 
     this.categories.push(category);
   }
+  list(): Category[] {
+    return this.categories;
+  }
 }
+export { CategoryRepository };
