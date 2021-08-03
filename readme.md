@@ -57,3 +57,6 @@ E para a organização de projeto
 - D
   - DIP
     - Dependency Inversion Principle (Principio da inversão de dependência)
+
+* aplicado singleton
+  - nao vai permite instância varias da mesma classe garantido que tenha so uma instância da classe
