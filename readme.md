@@ -28,3 +28,7 @@ utilizando o eslint estou pegando o estilo da airbnb
 ```
 
 - No prettier e so para definir as aspa que iremos usar
+
+## Conceito de repositórios
+
+repositórios sao camada responsável pela manipulação de dados na aplicação no banco de dados.
