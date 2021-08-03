@@ -1,4 +1,5 @@
 import { Category } from "../model/Category";
+
 import {
   ICategoriesRepository,
   ICreateCategoryDTO,
@@ -27,4 +28,5 @@ class CategoryRepository implements ICategoriesRepository {
     return category;
   }
 }
+
 export { CategoryRepository };
