@@ -37,3 +37,23 @@ repositórios sao camada responsável pela manipulação de dados na aplicação
 
 - podemos usa o conceito DTO `Data transfer objeto`
   - um objeto que que seja responsável entra as camadas.
+
+## Solid
+
+E para a organização de projeto
+
+- S
+  - SRP
+    - Single Responsabilidade Principle (Principio da Responsabilidade única)
+- O
+  - OCP
+    - Open-Closed Principle (Principio aberto/fechado)
+- L
+  - LSP
+    - Liskov Substitution Principle (Principio de substituição de liskov)
+- I
+  - ISP
+    - Interface Segregation Principle (Principio de Segregação de interface)
+- D
+  - DIP
+    - Dependency Inversion Principle (Principio da inversão de dependência)
