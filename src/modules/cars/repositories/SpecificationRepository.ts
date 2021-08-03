@@ -11,7 +11,14 @@ class SpecificationRepository implements ISpecificationRepository {
     this.specifications = [];
   }
   create({ description, name }: ICreateSpecificationDTO): void {
-    throw new Error("Method not implemented.");
+    const specifications = new Specification();
+
+    Object.assign(specifications, {
+      description,
+      name,
+      created_at: new Date(),
+    });
+    this.specifications.push(specifications);
   }
 }
 
