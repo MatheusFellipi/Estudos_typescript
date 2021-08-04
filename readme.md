@@ -64,3 +64,16 @@ E para a organização de projeto
 ## swagger-ui-express
 
 a dependência para criar um documentação para aplicação desenvolvida
+
+## usando Docker
+
+Uso de container para a execução de banco de dados ou ate mesmo a aplicação
+
+- configura o DockerFile da forma que deseja
+- no cmd do local do projeto que localiza o dockerFile
+- executar o dockerFile
+
+```bash
+  docker build -t <nome da image> .
+
+```
