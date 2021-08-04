@@ -1,0 +1,81 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "CarRental Documentation",
+    "description": "This is an API CarRental",
+    "version": "1.0.0",
+    "contact": {
+      "email": "matheus"
+    }
+  },
+  "paths": {
+    "/categories": {
+      "post": {
+        "tags": [
+          "Categoria"
+        ],
+        "summary": "Criar a categoria",
+        "description": "Criar um nova categoria ",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  }
+                },
+                "example": {
+                  "name": "Nome da categoria",
+                  "description": "Descrição da categoria"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Categoria ja existe"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Categoria"
+        ],
+        "summary": "listagens das categorias",
+        "description": "Lista te todas as categorias categoria ",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "description": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

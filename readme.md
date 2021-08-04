@@ -60,3 +60,7 @@ E para a organização de projeto
 
 * aplicado singleton
   - nao vai permite instância varias da mesma classe garantido que tenha so uma instância da classe
+
+## swagger-ui-express
+
+a dependência para criar um documentação para aplicação desenvolvida
