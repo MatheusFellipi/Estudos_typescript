@@ -1,6 +1,19 @@
 version: "3.7"
 
 services:
+  postgres:
+    image: postgres
+    container_name: database_studies
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=123456
+      - POSTGRES_DB=carrental
+    volumes:
+      - pgdata:/data/postgres
+    network_mode: host
   app:
     build: .
     container_name: carrental
@@ -8,3 +21,7 @@ services:
       - 3333:3333
     volumes:
       - .:/usr/app
+    network_mode: host
+
+volumes:
+  pgdata:
