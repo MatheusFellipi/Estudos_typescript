@@ -8,7 +8,8 @@
   "scripts": {
     "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/main/server.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli",
-    "typeorm:run": "ts-node-dev ./node_modules/typeorm/cli migration:run"
+    "typeorm:run": "ts-node-dev ./node_modules/typeorm/cli migration:run",
+    "typeorm:revert": "ts-node-dev ./node_modules/typeorm/cli migration:migration:revert"
   },
   "dependencies": {
     "csv-parse": "^4.16.0",
