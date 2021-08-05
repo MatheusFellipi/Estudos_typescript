@@ -1,10 +1,9 @@
-import { table } from "console";
-import { MigrationInterface, QueryRunner } from "typeorm";
+import { MigrationInterface, QueryRunner, Table } from "typeorm";
 
 export class CreateSpecifications1628193071225 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.createTable(
-      new table({
+      new Table({
         name: "specifications",
         columns: [
           {
