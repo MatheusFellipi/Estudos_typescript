@@ -1,27 +1,33 @@
-version: "3.7"
+version: "3.9"
 
 services:
-  database_studies:
+  database:
     image: postgres
     container_name: database_studies
     restart: always
     ports:
       - 5432:5432
     environment:
-      - POSTGRES_USER=root
+      - POSTGRES_USER=docker
       - POSTGRES_PASSWORD=123456
-      - POSTGRES_DB=carrental
+      - POSTGRES_DB=carrent
     volumes:
       - pgdata:/data/postgres
-    network_mode: host
+
   app:
     build: .
-    container_name: carrental
+    container_name: carrent
+    restart: always
     ports:
       - 3333:3333
+      - 9229:9229
     volumes:
       - .:/usr/app
-    network_mode: host
+    links:
+      - database
+    depends_on:
+      - database
 
 volumes:
   pgdata:
+    driver: local
