@@ -77,3 +77,11 @@ Uso de container para a execução de banco de dados ou ate mesmo a aplicação
   docker build -t <nome da image> .
 
 ```
+
+## usando o typeorm
+
+- e um orm para facilita a construção do banco de dados
+
+## tsyringe
+
+- vai injeta de forma automático os repositórios e os use case as independência

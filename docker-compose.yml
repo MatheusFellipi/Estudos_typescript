@@ -13,6 +13,7 @@ services:
       - POSTGRES_DB=carrent
     volumes:
       - pgdata:/data/postgres
+    network_mode: host
 
   app:
     build: .
@@ -23,6 +24,8 @@ services:
       - 9229:9229
     volumes:
       - .:/usr/app
+    network_mode: host
+
     links:
       - database
     depends_on:

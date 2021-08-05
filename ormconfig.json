@@ -1,10 +1,12 @@
 {
   "type": "postgres",
-  "port": 5432,
-  "host": "localhost",
-  "username": "root",
-  "password": "123456",
-  "database": "carrental",
+  "host": "tuffi.db.elephantsql.com",
+  "username": "mhqqqyak",
+  "password": "9fHs47TqBp1eTkjVvde5zTQ9tFI-eGH8",
+  "database": "mhqqqyak",
+  "entities": [
+    "./src/modules/**/entities/*.ts"
+  ],
   "migrations": [
     "./src/database/migrations/*.ts"
   ],
