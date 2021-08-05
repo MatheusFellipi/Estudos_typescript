@@ -1,7 +1,7 @@
 version: "3.7"
 
 services:
-  postgres:
+  database_studies:
     image: postgres
     container_name: database_studies
     restart: always
