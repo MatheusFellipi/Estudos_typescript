@@ -28,17 +28,21 @@ class AuthenticateUserUseCase {
       throw new Error("Email or password incorrect!");
     }
     const passwordMatch = await compare(password, user.password);
-    if (passwordMatch) {
+    if (!passwordMatch) {
       throw new Error("Email or password incorrect!");
     }
     const token = sign({}, "5221ec70259819bba5acc33bbcdac8cf", {
       subject: user.id,
       expiresIn: "1d",
     });
-    return {
-      user,
+    const tokenReturn: IResponse = {
       token,
+      user: {
+        email: user.email,
+        name: user.name,
+      },
     };
+    return tokenReturn;
   }
 }
 export { AuthenticateUserUseCase };
