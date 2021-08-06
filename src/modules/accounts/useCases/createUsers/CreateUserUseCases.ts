@@ -19,7 +19,7 @@ class CreateUserUseCases {
     const userAlreadyExits = await this.usersRepository.findByEmail(email);
 
     if (userAlreadyExits) {
-      throw new Error("User already exits!!");
+      throw new AppError("User already exits!!");
     }
 
     const passwordHash = await hash(password, 8);
