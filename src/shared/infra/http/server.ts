@@ -3,12 +3,12 @@ import express, { NextFunction, Request, response, Response } from "express";
 import "express-async-errors";
 import swaggerUi from "swagger-ui-express";
 
-import "../database/index";
-import "../shared/container";
+import "@shared/infra/typeorm";
+import "@shared/container";
 
-import { AppError } from "../errors/appError";
+import swaggerFile from "../../../swagger.json";
+import { AppError } from "@shared/errors/appError";
 import { router } from "./routes";
-import swaggerFile from "../swagger.json";
 
 const port = process.env.PORT || "3333";
 

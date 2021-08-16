@@ -6,7 +6,7 @@
   "author": "Mathues fellipi <matheus.fellipi@outlook.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn src/main/server.ts",
+    "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn src/shared/infra/http/server.ts",
     "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli",
     "typeorm:run": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli migration:run",
     "typeorm:revert": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli migration:migration:revert",
