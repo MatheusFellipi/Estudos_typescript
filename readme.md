@@ -85,3 +85,18 @@ Uso de container para a execução de banco de dados ou ate mesmo a aplicação
 ## tsyringe
 
 - vai injeta de forma automático os repositórios e os use case as independência
+
+## aplicando o teste
+
+- Teste Unicário
+
+  - Teste de funcionalidade do sistema
+  - nao faz teste de banco e de api externo
+  - mas teste as regras de negócios
+
+- Teste de Integração
+  - Testar dos os fluxos da aplicação
+  - integração com banco de dados
+  - serviços externo
+
+TDD - Test Driven Development
