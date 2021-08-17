@@ -1,3 +1,10 @@
+# Requisito
+
+- Requisito Funcionais
+  - a as função que o sisitema vai ter
+- Requisito nao Funcionais
+- Regras de negocio
+
 ## Estudo de desenvolvimento com typescript
 
 - e possível coloca tipo nas informação que um função pode receber
